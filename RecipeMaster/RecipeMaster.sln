@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeMaster.Infrastructure", "src\RecipeMaster.Infrastructure\RecipeMaster.Infrastructure.csproj", "{7B3FB43E-0B40-488C-8144-557B8672682B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeMaster.Api", "src\RecipeMaster.Api\RecipeMaster.Api.csproj", "{65C9CF72-BA92-4B0A-ADAD-9303BDD1D9A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeMaster.Application", "src\RecipeMaster.Application\RecipeMaster.Application.csproj", "{5B0F9887-992E-4FC2-867E-CD1D28FF396D}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{81DDED9D-158B-E303-5F62-77A2896D2A5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeMaster.Domain", "src\RecipeMaster.Domain\RecipeMaster.Domain.csproj", "{6D7392F2-5026-4D1E-9034-6EF2FB060945}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B3FB43E-0B40-488C-8144-557B8672682B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B3FB43E-0B40-488C-8144-557B8672682B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B3FB43E-0B40-488C-8144-557B8672682B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B3FB43E-0B40-488C-8144-557B8672682B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65C9CF72-BA92-4B0A-ADAD-9303BDD1D9A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65C9CF72-BA92-4B0A-ADAD-9303BDD1D9A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65C9CF72-BA92-4B0A-ADAD-9303BDD1D9A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65C9CF72-BA92-4B0A-ADAD-9303BDD1D9A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B0F9887-992E-4FC2-867E-CD1D28FF396D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B0F9887-992E-4FC2-867E-CD1D28FF396D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B0F9887-992E-4FC2-867E-CD1D28FF396D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B0F9887-992E-4FC2-867E-CD1D28FF396D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D7392F2-5026-4D1E-9034-6EF2FB060945}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D7392F2-5026-4D1E-9034-6EF2FB060945}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D7392F2-5026-4D1E-9034-6EF2FB060945}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D7392F2-5026-4D1E-9034-6EF2FB060945}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7B3FB43E-0B40-488C-8144-557B8672682B} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{65C9CF72-BA92-4B0A-ADAD-9303BDD1D9A0} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{5B0F9887-992E-4FC2-867E-CD1D28FF396D} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{6D7392F2-5026-4D1E-9034-6EF2FB060945} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BAA55F6A-53FD-4A16-85DE-C66C04A40BF7}
+	EndGlobalSection
+EndGlobal

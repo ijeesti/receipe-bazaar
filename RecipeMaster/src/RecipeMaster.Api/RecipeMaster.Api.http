@@ -1,0 +1,143 @@
+# Recipe Bazaar API Requests
+# Use any HTTP client to send these requests.
+# Make sure to include an empty line after headers so the "Send Request" link appears.
+# Define the API host variable first
+
+@RecipeMaster.Api_HostAddress = http://localhost:4005/api
+
+### Recipes
+
+# Get all recipes
+GET {{RecipeMaster.Api_HostAddress}}/recipes
+Accept: application/json
+
+###
+
+# Get a single recipe by ID
+GET {{RecipeMaster.Api_HostAddress}}/recipes/1
+Accept: application/json
+
+###
+
+# Create a new recipe
+POST {{RecipeMaster.Api_HostAddress}}/recipes
+Content-Type: application/json
+
+{
+  "title": "New Recipe",
+  "ingredients": "Flour, Sugar, Eggs",
+  "instructions": "Mix and bake",
+  "imageUrl": "https://placehold.co/600x400",
+  "userId": 1,
+  "categoryId": 2
+}
+
+###
+
+# Update an existing recipe
+PUT {{RecipeMaster.Api_HostAddress}}/recipes/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "Updated Recipe",
+  "ingredients": "Updated ingredients",
+  "instructions": "Updated instructions",
+  "imageUrl": "https://placehold.co/600x400",
+  "userId": 1,
+  "categoryId": 2
+}
+
+###
+
+# Delete a recipe
+DELETE {{RecipeMaster.Api_HostAddress}}/recipes/1
+Accept: application/json
+
+###
+
+### Users
+
+# Get all users
+GET {{RecipeMaster.Api_HostAddress}}/users
+Accept: application/json
+
+###
+
+# Get a single user by ID
+GET {{RecipeMaster.Api_HostAddress}}/users/1
+Accept: application/json
+
+###
+
+# Create a new user
+POST {{RecipeMaster.Api_HostAddress}}/users
+Content-Type: application/json
+
+{
+  "name": "Charlie",
+  "email": "charlie@example.com"
+}
+
+###
+
+# Update a user
+PUT {{RecipeMaster.Api_HostAddress}}/users/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Alice Updated",
+  "email": "alice_updated@example.com"
+}
+
+###
+
+# Delete a user
+DELETE {{RecipeMaster.Api_HostAddress}}/users/1
+Accept: application/json
+
+###
+
+### Comments
+
+# Get all comments
+GET {{RecipeMaster.Api_HostAddress}}/comments
+Accept: application/json
+
+###
+
+# Get comments for a recipe
+GET {{RecipeMaster.Api_HostAddress}}/recipes/1/comments
+Accept: application/json
+
+###
+
+# Create a comment
+POST {{RecipeMaster.Api_HostAddress}}/comments
+Content-Type: application/json
+
+{
+  "recipeId": 1,
+  "userId": 2,
+  "content": "This recipe is amazing!"
+}
+
+###
+
+# Update a comment
+PUT {{RecipeMaster.Api_HostAddress}}/comments/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "recipeId": 1,
+  "userId": 2,
+  "content": "Updated comment text"
+}
+
+###
+
+# Delete a comment
+DELETE {{RecipeMaster.Api_HostAddress}}/comments/1
+Accept: application/json

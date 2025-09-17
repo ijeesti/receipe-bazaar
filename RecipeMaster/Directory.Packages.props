@@ -1,0 +1,30 @@
+<Project>
+  <ItemGroup>
+    <!-- EF Core -->
+    <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.0" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0" PrivateAssets="all" />
+
+    <!-- EF Core Tools (optional for CLI migrations) -->
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0" PrivateAssets="all" />
+
+    <!-- Swagger / OpenAPI -->
+    <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+
+    <!-- JSON serialization -->
+    <PackageVersion Include="Newtonsoft.Json" Version="13.0.3" />
+
+    <!-- Logging -->
+    <PackageVersion Include="Serilog.AspNetCore" Version="7.0.0" />
+    <PackageVersion Include="Serilog.Sinks.Console" Version="5.0.1" />
+
+    <!-- Automapper (optional) -->
+    <PackageVersion Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+
+    <!-- FluentValidation (optional) -->
+    <PackageVersion Include="FluentValidation.AspNetCore" Version="11.6.0" />
+
+    <!-- CORS (usually built-in but can install Microsoft.AspNetCore.Cors) -->
+    <PackageVersion Include="Microsoft.AspNetCore.Cors" Version="9.0.0" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  recipemaster.api:
+    build:
+      context: .
+      dockerfile: src/RecipeMaster.Api/Dockerfile
+    container_name: RecipeMaster_api
+    ports:
+      - "4005:8080" # HTTP
+      - "4004:8081" # HTTPS
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+    volumes:
+      - sqlite_data:/app/data
+
+volumes:
+  sqlite_data:
