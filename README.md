@@ -64,11 +64,13 @@ RecipeBazaar/
 │  ├─ e2e/
 │
 └─ README.md
+```
+---
 
 ### Prerequisites
 
-- **Node.js 22+** (for frontend)
-- **Docker & Docker Compose** (for backend)
+- **Frontend**: **Node.js 22+** 
+- **Backend**: **Docker & Docker Compose**
 
 
 ### Backend Setup
@@ -85,7 +87,8 @@ RecipeBazaar/
 * cd app
     * npm install
     * npm run dev
-
+```
+---
 
 ### UI Testing
 ## Component Tests
