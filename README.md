@@ -17,6 +17,7 @@ Recipe Bazaar is a fully functional recipe application that demonstrates:
 - **Dockerized Backend**: Run the API in a Docker container for easy setup  
 - **Database Persistence**: Uses SQLite by default, easily switchable to SQL Server  
 
+
 ---
 
 ## Features
@@ -99,3 +100,12 @@ RecipeBazaar/
     * npx cypress open --e2e
     * npx cypress run --e2e
 
+
+---
+
+#### Screenshots
+- [Home Page](screenshots/home.png)
+- [Detail page](screenshots/detail.png)
+- [About Page](screenshots/about.png)
+- [UI tests - component](screenshots/component.png)
+- [UI tests - e2e](screenshots/e2e.png)

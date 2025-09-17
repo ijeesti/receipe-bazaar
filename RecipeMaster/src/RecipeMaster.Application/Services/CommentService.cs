@@ -27,9 +27,7 @@ public class CommentService(IRepository<CommentEntity> repository) : ICommentSer
     {
         var result = await repository.GetByIdAsync(id);
 
-        return (result == null)
-             ? null
-             : result.ToCommentDto();
+        return result?.ToCommentDto();
     }
 
     public async Task<IEnumerable<CommentDto?>> GetByRecipeAsync(int recipeId)

@@ -12,34 +12,24 @@ public class RecipeService(IRecipeRepository recipeRepository, ICommentRepositor
     public async Task<RecipeDto?> GetRecipeByIdAsync(int id)
     {
         var entity = await recipeRepository.GetRecipeByIdAsync(id);
-        return entity == null
-            ? null
-            : entity.ToRecipeDto();
+        return entity?.ToRecipeDto();
     }
+
     public async Task<int> CreateRecipeAsync(CreateRecipeDto createRecipeDto)
     {
-        try
+        var recipe = new RecipeEntity
         {
-            var recipe = new RecipeEntity
-            {
-                Title = createRecipeDto.Title,
-                Ingredients = createRecipeDto.Ingredients,
-                Instructions = createRecipeDto.Instructions,
-                ImageUrl = createRecipeDto.ImageUrl,
-                CategoryId = createRecipeDto.CategoryId,
-                UserId = createRecipeDto.UserId
-            };
+            Title = createRecipeDto.Title,
+            Ingredients = createRecipeDto.Ingredients,
+            Instructions = createRecipeDto.Instructions,
+            ImageUrl = createRecipeDto.ImageUrl,
+            CategoryId = createRecipeDto.CategoryId,
+            UserId = createRecipeDto.UserId
+        };
 
-            await recipeRepository.AddAsync(recipe);
-            await recipeRepository.SaveChangesAsync();
-            return recipe.Id;
-        }
-        catch (Exception ex)
-        {
-            var x = ex.Message;
-            throw;
-        }
-
+        await recipeRepository.AddAsync(recipe);
+        await recipeRepository.SaveChangesAsync();
+        return recipe.Id;
     }
 
     public async Task<RecipeDto?> UpdateRecipeAsync(RecipeDto recipeDto)
