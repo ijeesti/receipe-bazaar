@@ -85,17 +85,17 @@ RecipeBazaar/
 
 ```bash
 * cd app
-    * npm install
-    * npm run dev
+* npm install
+* npm run dev
 ```
 ---
 
 ### UI Testing
-## Component Tests
+#### Component Tests
     * npx cypress open --component 
     * npx cypress run --component
 
-## End-to-End Tests
+#### End-to-End Tests
     * npx cypress open --e2e
     * npx cypress run --e2e
 
